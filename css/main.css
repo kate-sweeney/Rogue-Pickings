@@ -1,0 +1,223 @@
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	font-size: 1em;
+}
+
+html{
+	font-size: 10px;
+}
+.container{
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+/* ====== Typography ===== */
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 1.4em;
+	line-height: 2.1em;
+    padding: 0 30px;
+}
+/* ===== Header ======== */
+
+header {
+	border-bottom: 3px solid #77a466;
+	display: flex;
+	flex-direction: column;
+}
+
+header h1 {
+	margin: 0;
+	padding: 38px 0 18px 0;
+	border-bottom: 3px solid #77a466;
+}
+header h1 span {
+	color: #77a466;
+}
+
+/* ====== Navigation ====== */
+
+header nav {
+	padding: 0 0 24px 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.4em;
+	padding: 8px 10px;
+	display: inline;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/* === Top Section ====*/
+
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-image {
+	height: auto;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1.6em;
+	line-height: 25px;
+}
+/* === Bottom Section ====*/
+
+.bottom-section{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.menu-section,
+.reviews-section,
+.contact-section {
+	width: 100%;
+	height: auto;
+	margin-bottom: 18px;
+	border-top: 1px solid #eee;
+}
+
+.menu-section{
+	align-self: center;
+}
+.menu-section h3 {
+	padding: 10px 0;
+	margin-left: 32px;	
+}
+
+.reviews-section h3,
+.contact-section h3 {
+	padding: 10px 30px;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 15px 0;
+	color:#77a466;
+	font-size: 1.6em;
+	margin-left: 32px;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1.6em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1.6em;
+	line-height: 24px;
+}
+
+footer {
+	border-top: 3px solid #eee;
+	margin: 20px auto;
+	text-align: center;
+	display: flex;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1.4em;
+}
+/*========== Tablet ============*/
+
+@media (min-width: 748px){
+	.bottom-section{
+		flex-direction: row;
+	}
+	.menu-section,
+	.reviews-section,
+	.contact-section {
+		width: 33%;
+		height: auto;
+		border-top: none;
+		align-self: flex-start;
+		
+	}
+	.reviews-section{
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+}
+
+/* ============DESKTOP============= */
+
+@media (min-width: 875px){
+
+	header{
+		width: 100%;
+		border-bottom: none;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+	}
+	header nav ul {
+		flex-direction: row;	
+	}
+	
+	header nav{
+		padding: 46px 0;
+	}
+
+}
